@@ -28,7 +28,7 @@
  *
  * @returns {Array<Object>} массив объединённых объектов
  */
-const mergeBy = function(arr1, arr2, key) {
+const mergeBy = (arr1, arr2, key) => {
     if (!Array.isArray(arr1) || !Array.isArray(arr2)) {
         throw new TypeError('mergeBy: arr1 и arr2 должны быть массивами');
     }
